@@ -12,7 +12,7 @@ from selene.support.conditions import have, be
 def test_student_registration_form(setup_browser):
     browser = setup_browser
     with allure.step('Открытие браузера'):
-        browser.open('https://demoqa.com/automation-practice-form')
+        browser.open('https://demoqa.com/automafghtion-practice-form')
 
     with allure.step('Заполнение формы'):
         browser.element('#firstName').type('Vladimir')
