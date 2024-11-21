@@ -12,7 +12,7 @@ registration_page = RegistrationForm()
 def test_student_registration_form(setup_browser):
     browser = setup_browser
     with allure.step('Открытие браузера'):
-        registration_page.browser_open()
+        registration_page.browser_open(setup_browser)
 
     with allure.step('Заполнение формы'):
         browser.element('#firstName').type('Vladimir')
