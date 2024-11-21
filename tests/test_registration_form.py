@@ -3,16 +3,16 @@ import os.path
 import allure
 from selene import browser, command
 from selene.support.conditions import have, be
-from pages import RegistrationForm
+from pages.RegistrationForm import RegistrationFrom
 
-registration_page = RegistrationForm()
+
 
 @allure.story('Reg Page')
 @allure.title('Заполнение формы')
 def test_student_registration_form(setup_browser):
     browser = setup_browser
     with allure.step('Открытие браузера'):
-        registration_page.browser_open(setup_browser)
+        browser.open('https://demoqa.com/automation-practice-form')
 
     with allure.step('Заполнение формы'):
         browser.element('#firstName').type('Vladimir')
