@@ -3,7 +3,7 @@ import os.path
 import allure
 from selene import browser, command
 from selene.support.conditions import have, be
-from pages.RegistrationForm import RegistrationFrom
+
 
 
 
