@@ -7,8 +7,8 @@ from pages import RegistrationForm
 
 registration_page = RegistrationForm()
 
-
-@allure.title('Choose form')
+@allure.story('Reg Page')
+@allure.title('Заполнение формы')
 def test_student_registration_form(setup_browser):
     browser = setup_browser
     with allure.step('Открытие браузера'):
